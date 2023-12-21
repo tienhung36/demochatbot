@@ -125,7 +125,3 @@ uvloop
 wandb
 wincertstore
 wolframalpha
-xlrd
-xmlrpclib
-youtube_transcript_api
-zstandard
