@@ -4,7 +4,6 @@ streamlit
 openai
 aim
 aiodns
-aleph_alpha_client
 atlassian
 banana_dev
 beautifulsoup4
