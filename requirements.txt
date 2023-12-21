@@ -2,4 +2,5 @@ langchain
 langchain_experimental
 streamlit
 openai
+python-dotenv
 tabulate
