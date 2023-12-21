@@ -15,7 +15,6 @@ mwparserfromhell
 mwxml
 networkx
 nltk
-numarray
 pdf2image
 pdfminer
 pickle
