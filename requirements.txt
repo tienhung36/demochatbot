@@ -68,8 +68,6 @@ mwxml
 networkx
 nltk
 nomic
-nose
-numarray
 Numeric
 O365
 ordereddict
