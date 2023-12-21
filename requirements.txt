@@ -5,7 +5,6 @@ openai
 aim
 aiodns
 aleph_alpha_client
-apify_client
 atlassian
 banana_dev
 beautifulsoup4
