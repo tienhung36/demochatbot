@@ -67,9 +67,6 @@ mwparserfromhell
 mwxml
 networkx
 nltk
-nomic
-Numeric
-O365
 ordereddict
 pdf2image
 pdfminer
