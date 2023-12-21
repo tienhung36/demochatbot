@@ -56,7 +56,6 @@ InstructorEmbedding
 ipython
 ipywidgets
 Jinja2
-jnius
 keyring
 lark
 lockfile
