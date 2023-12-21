@@ -119,7 +119,6 @@ tokenizers
 tokio
 torch
 tornado
-transformers
 truststore
 tweepy
 urllib3_secure_extra
