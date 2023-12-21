@@ -7,7 +7,6 @@ aiodns
 aleph_alpha_client
 apify_client
 arize
-asynctest
 atlassian
 banana_dev
 beautifulsoup4
