@@ -122,7 +122,6 @@ tornado
 tweepy
 urllib3_secure_extra
 uvloop
-vespa
 wandb
 wincertstore
 wolframalpha
