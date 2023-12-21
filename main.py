@@ -1,21 +1,28 @@
 from langchain_experimental.agents.agent_toolkits import create_csv_agent
+
 from langchain.llms import OpenAI
+from dotenv import load_dotenv
+import os
 import streamlit as st
 
 def main():
+    load_dotenv()
+
+    # Load the OpenAI API key from the environment variable
+    if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
+        print("OPENAI_API_KEY is not set")
+        exit(1)
+    else:
+        print("OPENAI_API_KEY is set")
+
     st.set_page_config(page_title="Ask your CSV")
     st.header("Ask your CSV 📈")
 
     csv_file = st.file_uploader("Upload a CSV file", type="csv")
     if csv_file is not None:
-        # Set your OpenAI API key directly in the code
-        openai_api_key = "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"
 
         agent = create_csv_agent(
-            OpenAI(api_key=openai_api_key, temperature=0),
-            csv_file,
-            verbose=True
-        )
+            OpenAI(temperature=0), csv_file, verbose=True)
 
         user_question = st.text_input("Ask a question about your CSV: ")
 
@@ -23,5 +30,7 @@ def main():
             with st.spinner(text="In progress..."):
                 st.write(agent.run(user_question))
 
+
 if __name__ == "__main__":
     main()
+
